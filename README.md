@@ -9,6 +9,7 @@ A modern and responsive website built with Tailwind CSS.
  Dark mode support
  Custom animations
  Performance optimized
+
 ## 🛠️ Technologies Used
 - Tailwind CSS
  HTML5
