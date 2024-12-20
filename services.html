@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ELITE - Event Company</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: "Montserrat", sans-serif;
+    }
+    .hamburger {
+      color: #fbb829;
+    }
+    #menu ,#dropdown-menu{
+  font-family: "Montserrat", sans-serif;
+}
+#logoo{
+  font-family:"Playfair", serif;
+}
+  </style>
+</head>
+
+<body>
+<!-- Header -->
+<nav class="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-gray-900 to-black shadow-lg border-b border-yellow-400/20">
+  <div class="container mx-auto px-16">
+    <div class="flex justify-between items-center py-6">
+      <!-- Logo with enhanced styling -->
+      <a href="./index.html" id="logoo" class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-200 hover:from-yellow-200 hover:to-yellow-400 transition duration-300">ELITE</a>
+
+     
+      <button 
+        id="menu-toggle" 
+        class="hamburger hover:text-blue-600 focus:outline-none md:hidden"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+
+  
+      <div id="menu" class="hidden md:flex md:space-x-4 lg:space-x-8 items-center">
+          <a href="./index.html" class="text-gray-300 text-center hover:text-yellow-400 transition-all duration-300 hover:scale-105">HOME</a>
+          <a href="./about.html" class="text-gray-300 text-center hover:text-yellow-400 transition-all duration-300 hover:scale-105">ABOUT</a>
+          <a href="./services.html" class="text-yellow-400 font-medium text-center hover:text-yellow-400 transition-all duration-300 hover:scale-105 border-b-2 border-yellow-400">SERVICES</a>
+          <a href="./gallery.html" class="text-gray-300 text-center hover:text-yellow-400 transition-all duration-300 hover:scale-105">GALLERY</a>
+          <a href="./contact.html" class="text-gray-300 text-center hover:text-yellow-400 transition-all duration-300 hover:scale-105">CONTACT</a>
+          <a href="./pricing.html" class="bg-yellow-400 text-black px-4 py-1 rounded-full hover:bg-yellow-500 transition-all duration-300 hover:scale-105">PRICING</a>
+      </div>
+    </div>
+
+    <div id="dropdown-menu" class="hidden flex-col md:hidden space-y-2 bg-black rounded-md shadow-md px-4 py-2">
+      <a href="./index.html" class="block text-center text-yellow-400 font-medium hover:text-yellow-400 transition border-b-2 border-yellow-400">HOME</a>
+    <a href="./about.html" class="block text-center text-white hover:text-yellow-400 transition">ABOUT</a>
+    <a href="./services.html" class="block text-center text-white hover:text-yellow-400 transition">SERVICES</a>
+    <a href="./gallery.html" class="block text-center text-white hover:text-yellow-400 transition">GALLERY</a>
+    <a href="./contact.html" class="block text-center text-white hover:text-yellow-400 transition">CONTACT</a>
+    <a href="./pricing.html" class="block text-center bg-yellow-400 text-black hover:bg-yellow-500 transition rounded-full my-2">PRICING</a>
+    </div>
+  </div>
+</nav>
+<div class="h-24"></div>
+<script>
+ 
+  const menuToggle = document.getElementById('menu-toggle');
+  const dropdownMenu = document.getElementById('dropdown-menu');
+
+  menuToggle.addEventListener('click', () => {
+    dropdownMenu.classList.toggle('hidden');
+    dropdownMenu.classList.toggle('flex');
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div>
+    <h1 class="text-7xl font-['Cormorant_Garamond'] font-light text-[#fbb829] mb-8 text-center mt-20 leading-tight">
+      How Can We Help You?
+    </h1>
+  </div>
+
+
+
+
+  <!-- helppp -->
+
+  <div class=" flex items-center justify-center ">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-1 items-center bg-white rounded-lg shadow-lg overflow-hidden">
+    
+        <div class="p-6">
+          <h1 class="text-2xl font-bold text-gray-800">Elite Events & Decors </h1>
+          <p class="mt-4 text-gray-600">
+            Our innovative agency provides
+            full-service planning, management, and production services for corporate events nationwide. Our event
+            services are
+            comprehensive in that we offer everything you need for your event from start to finish. Our event managers
+            are
+            experts and are here to conceptualize and bring engagement to your next event. We want to learn more about
+            your
+            company culture so we can best serve your employees. is our specialty. Let us bring the most
+            unique entertainment, innovative technology and creative design to your celebration</p>
+          <div class="flex flex-col sm:flex-row gap-4 mt-6">
+            <a href="./contact.html" class="w-full sm:w-auto px-6 py-3 bg-[#c8a95c] text-white hover:bg-transparent hover:text-[#c8a95c] border border-[#c8a95c] transition duration-300 text-center text-sm rounded-lg">
+              Talk to Expert
+            </a>
+            <a href="./contact.html" class="w-full sm:w-auto px-6 py-3 bg-[#c8a95c] text-white hover:bg-transparent hover:text-[#c8a95c] border border-[#c8a95c] transition duration-300 text-center text-sm rounded-lg">
+              Whatsapp Us
+            </a>
+          </div>
+        </div>
+       
+        <div class="p-6 ">
+          <img
+            src="https://png.pngtree.com/thumb_back/fw800/background/20231129/pngtree-wedding-decoration-in-beach-image_15494337.jpg"
+            alt="thinking_girl-imagee" class="w-full h-auto object-cover rounded-lg shadow-lg" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Services Section -->
+  <section id="services" class="py-20 bg-gray-50 mt-6">
+    <div class="container mx-auto">
+      <h2 class="text-7xl font-['Cormorant_Garamond'] font-light text-[#fbb829] mb-8 text-center leading-tight">Our Services</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 p-4">
+        <div class="bg-white shadow-lg rounded-2xl overflow-hidden group hover:shadow-2xl transition duration-500 flex flex-col h-full">
+          <div class="relative overflow-hidden rounded-t-2xl">
+            <img src="https://cdn.cdnparenting.com/articles/2018/06/243588019-H-1024x700.jpg" alt="Service" class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-black bg-opacity-20 group-hover:bg-opacity-40 transition duration-500"></div>
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <h3 class="text-2xl font-['Cormorant_Garamond'] text-gray-900 mb-3 group-hover:text-[#c8a95c] transition duration-300">Birth Day Celebration</h3>
+            <p class="text-gray-600 mb-6 flex-grow">
+              Our little star is turning one! Join us for a day filled with joy and cake as we celebrate
+            </p>
+            <a href="./contact.html" class="self-start mt-auto text-sm px-4 py-1.5 bg-[#c8a95c] text-white rounded-full hover:bg-transparent hover:text-[#c8a95c] border border-[#c8a95c] transition duration-300">
+              Learn More
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-2xl overflow-hidden group hover:shadow-2xl transition duration-500 flex flex-col h-full">
+          <div class="relative overflow-hidden rounded-t-2xl">
+            <img src="https://i.pinimg.com/originals/3a/c0/3f/3ac03f54f65c9591c160a18ab0d3234f.jpg" alt="Service" class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-black bg-opacity-20 group-hover:bg-opacity-40 transition duration-500"></div>
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <h3 class="text-2xl font-['Cormorant_Garamond'] text-gray-900 mb-3 group-hover:text-[#c8a95c] transition duration-300">Wedding Event's</h3>
+            <p class="text-gray-600 mb-6 flex-grow">
+              We would be honored to have you share this special day with us as we tie the knot
+            </p>
+            <a href="./contact.html" class="self-start mt-auto text-sm px-4 py-1.5 bg-[#c8a95c] text-white rounded-full hover:bg-transparent hover:text-[#c8a95c] border border-[#c8a95c] transition duration-300">
+              Learn More
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-2xl overflow-hidden group hover:shadow-2xl transition duration-500 flex flex-col h-full">
+          <div class="relative overflow-hidden rounded-t-2xl">
+            <img src="https://eventsolutions.com/wp-content/uploads/2019/02/Company-Conference-Luncheon-Entertainment-1024x684.jpg.webp" alt="Service" class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-black bg-opacity-20 group-hover:bg-opacity-40 transition duration-500"></div>
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <h3 class="text-2xl font-['Cormorant_Garamond'] text-gray-900 mb-3 group-hover:text-[#c8a95c] transition duration-300">Corprative Event</h3>
+            <p class="text-gray-600 mb-6 flex-grow">
+              Let's Enjoy this time,Tommorow us memmorable
+            </p>
+            <a href="./contact.html" class="self-start mt-auto text-sm px-4 py-1.5 bg-[#c8a95c] text-white rounded-full hover:bg-transparent hover:text-[#c8a95c] border border-[#c8a95c] transition duration-300">
+              Learn More
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-2xl overflow-hidden group hover:shadow-2xl transition duration-500 flex flex-col h-full">
+          <div class="relative overflow-hidden rounded-t-2xl">
+            <img src="https://www.partyinkers.com/wp-content/uploads/2024/08/Partyinkers_Product_Launching_Events_18.jpg" alt="Service" class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-black bg-opacity-20 group-hover:bg-opacity-40 transition duration-500"></div>
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <h3 class="text-2xl font-['Cormorant_Garamond'] text-gray-900 mb-3 group-hover:text-[#c8a95c] transition duration-300">Product Launches</h3>
+            <p class="text-gray-600 mb-6 flex-grow">
+              a well-planned marketing strategy to introduce a new product or service to the market
+            </p>
+            <a href="./contact.html" class="self-start mt-auto text-sm px-4 py-1.5 bg-[#c8a95c] text-white rounded-full hover:bg-transparent hover:text-[#c8a95c] border border-[#c8a95c] transition duration-300">
+              Learn More
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-2xl overflow-hidden group hover:shadow-2xl transition duration-500 flex flex-col h-full">
+          <div class="relative overflow-hidden rounded-t-2xl">
+            <img src="https://5.imimg.com/data5/SELLER/Default/2022/7/UV/OO/IL/156457827/3-500x500.jpg" alt="Service" class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-black bg-opacity-20 group-hover:bg-opacity-40 transition duration-500"></div>
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <h3 class="text-2xl font-['Cormorant_Garamond'] text-gray-900 mb-3 group-hover:text-[#c8a95c] transition duration-300">Brand Promotion</h3>
+            <p class="text-gray-600 mb-6 flex-grow">
+              Your business should be highly visible and always presented in the best light possible
+            </p>
+            <a href="./contact.html" class="self-start mt-auto text-sm px-4 py-1.5 bg-[#c8a95c] text-white rounded-full hover:bg-transparent hover:text-[#c8a95c] border border-[#c8a95c] transition duration-300">
+              Learn More
+            </a>
+          </div>
+        </div>
+
+        <div class="bg-white shadow-lg rounded-2xl overflow-hidden group hover:shadow-2xl transition duration-500 flex flex-col h-full">
+          <div class="relative overflow-hidden rounded-t-2xl">
+            <img src="https://v3events.in/blog/wp-content/uploads/2023/01/o.jpeg" alt="Service" class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-black bg-opacity-20 group-hover:bg-opacity-40 transition duration-500"></div>
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <h3 class="text-2xl font-['Cormorant_Garamond'] text-gray-900 mb-3 group-hover:text-[#c8a95c] transition duration-300">Destination Wedding</h3>
+            <p class="text-gray-600 mb-6 flex-grow">
+              We would be honored to have you share this special day with us as we tie the knot
+            </p>
+            <a href="./contact.html" class="self-start mt-auto text-sm px-4 py-1.5 bg-[#c8a95c] text-white rounded-full hover:bg-transparent hover:text-[#c8a95c] border border-[#c8a95c] transition duration-300">
+              Learn More
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <h2 class="text-7xl font-['Cormorant_Garamond'] font-light text-[#fbb829] text-center my-20 leading-tight">
+    WHAT WE DO
+  </h2>
+  <p class="text-xl text-gray-600 max-w-4xl mx-auto text-center px-4 mb-16">
+    Elite Events & Decors is a comprehensive event planning and management agency that produces large-scaled corporate events for Fortune 1000 companies. Innovative and proven techniques deliver unmatched experiences to increase engagement.
+  </p>
+  <div class="w-full min-h-screen gap-8 flex-wrap flex justify-center items-center mb-5 mt-5">
+
+
+
+
+
+
+    <!-- <hellp></hellp> -->
+
+    <div class="container mx-auto p-4">
+      <div class="grid gap-6 md:grid-cols-3 lg:grid-cols-3">
+        <!-- Card 1 -->
+        <div class="bg-white shadow-lg rounded-2xl overflow-hidden group hover:shadow-2xl transition duration-500 flex flex-col h-full">
+          <div class="relative overflow-hidden rounded-t-2xl">
+            <img src="https://res.cloudinary.com/liaison-inc/image/upload/c_fill,f_auto,q_auto,h_400,w_768/services/fash/backgrounds/event-planning.jpg" 
+                 alt="Event Planning" 
+                 class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-black bg-opacity-20 group-hover:bg-opacity-40 transition duration-500"></div>
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <h3 class="text-2xl font-['Cormorant_Garamond'] text-gray-900 mb-3 group-hover:text-[#c8a95c] transition duration-300">
+              EVENT PLANNING
+            </h3>
+            <p class="text-gray-600 text-base mb-6 flex-grow">
+              Elite Events & Decors an award-winning event planning agency, produces world class events.
+            </p>
+            <a href="./contact.html" class="self-start mt-auto text-sm px-4 py-1.5 bg-[#c8a95c] text-white rounded-full hover:bg-transparent hover:text-[#c8a95c] border border-[#c8a95c] transition duration-300">
+              Learn More
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white shadow-lg rounded-2xl overflow-hidden group hover:shadow-2xl transition duration-500 flex flex-col h-full">
+          <div class="relative overflow-hidden rounded-t-2xl">
+            <img src="https://i0.swiftpic.io/gpj/Uuf04oXwr4F1oQOTdbrjZUIxqiEBEpuSH45wVtBPXHk=/format:jpg;cover:1440,621/https://www.gpj.com/wp-content/uploads/2020/08/2017_1005_GPJ_RnFconvention_Day1_KeyLimePhoto-247-scaled.jpg" 
+                 alt="Production" 
+                 class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-black bg-opacity-20 group-hover:bg-opacity-40 transition duration-500"></div>
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <h3 class="text-2xl font-['Cormorant_Garamond'] text-gray-900 mb-3 group-hover:text-[#c8a95c] transition duration-300">
+              PRODUCTION
+            </h3>
+            <p class="text-gray-600 text-base mb-6 flex-grow">
+              Full-service event production for live, hybrid, and virtual events.
+            </p>
+            <a href="./contact.html" class="self-start mt-auto text-sm px-4 py-1.5 bg-[#c8a95c] text-white rounded-full hover:bg-transparent hover:text-[#c8a95c] border border-[#c8a95c] transition duration-300">
+              Learn More
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white shadow-lg rounded-2xl overflow-hidden group hover:shadow-2xl transition duration-500 flex flex-col h-full">
+          <div class="relative overflow-hidden rounded-t-2xl">
+            <img src="https://d12m9erqbesehq.cloudfront.net/wp-content/uploads/sites/2/2024/01/17194735/Blog-Banner-Everything-You-Need-to-Know-About-Event-Design.jpg" 
+                 alt="Creative Design" 
+                 class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-black bg-opacity-20 group-hover:bg-opacity-40 transition duration-500"></div>
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <h3 class="text-2xl font-['Cormorant_Garamond'] text-gray-900 mb-3 group-hover:text-[#c8a95c] transition duration-300">
+              CREATIVE DESIGN
+            </h3>
+            <p class="text-gray-600 text-base mb-6 flex-grow">
+              Innovative solutions and an experienced team allow us to fabricate dreams into reality.
+            </p>
+            <a href="./contact.html" class="self-start mt-auto text-sm px-4 py-1.5 bg-[#c8a95c] text-white rounded-full hover:bg-transparent hover:text-[#c8a95c] border border-[#c8a95c] transition duration-300">
+              Learn More
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bg-white shadow-lg rounded-2xl overflow-hidden group hover:shadow-2xl transition duration-500 flex flex-col h-full">
+          <div class="relative overflow-hidden rounded-t-2xl">
+            <img src="https://cdn.prod.website-files.com/63fd192dd215bc77df0c6cb0/642b56fa40c745c2f585a367_sam-moghadam-khamseh-bu_7B-G1eWg-unsplash.jpg" alt="Event Technology" class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-black bg-opacity-20 group-hover:bg-opacity-40 transition duration-500"></div>
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <h3 class="text-2xl font-['Cormorant_Garamond'] text-gray-900 mb-3 group-hover:text-[#c8a95c] transition duration-300">
+              EVENT TECHNOLOGY
+            </h3>
+            <p class="text-gray-600 text-base mb-6 flex-grow">
+              Put the latest in technology to work for you! We utilize best-in-class technology to
+              create stunning experiences presented in powerful ways.
+            </p>
+            <a href="./contact.html" class="self-start mt-auto text-sm px-4 py-1.5 bg-[#c8a95c] text-white rounded-full hover:bg-transparent hover:text-[#c8a95c] border border-[#c8a95c] transition duration-300">
+              Learn More
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="bg-white shadow-lg rounded-2xl overflow-hidden group hover:shadow-2xl transition duration-500 flex flex-col h-full">
+          <div class="relative overflow-hidden rounded-t-2xl">
+            <img src="https://eventsmanagementkerala.com/wp-content/uploads/2024/11/thaliya-new-1024x576.webp" alt="Catering" class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-black bg-opacity-20 group-hover:bg-opacity-40 transition duration-500"></div>
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <h3 class="text-2xl font-['Cormorant_Garamond'] text-gray-900 mb-3 group-hover:text-[#c8a95c] transition duration-300">
+              CATERINGS
+            </h3>
+            <p class="text-gray-600 text-base mb-6 flex-grow">
+              Let us help you source all your event needs. it's a launch and fast foods juices and
+              chilled beers all in available
+            </p>
+            <a href="./contact.html" class="self-start mt-auto text-sm px-4 py-1.5 bg-[#c8a95c] text-white rounded-full hover:bg-transparent hover:text-[#c8a95c] border border-[#c8a95c] transition duration-300">
+              Learn More
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="bg-white shadow-lg rounded-2xl overflow-hidden group hover:shadow-2xl transition duration-500 flex flex-col h-full">
+          <div class="relative overflow-hidden rounded-t-2xl">
+            <img src="https://cdn.prod.website-files.com/600faaecb03ce57f6fa98050/635ad681db8ad66289b72eb8_Hyperpersonalization%20.jpg" alt="Customised" class="w-full h-64 object-cover transform group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-black bg-opacity-20 group-hover:bg-opacity-40 transition duration-500"></div>
+          </div>
+          <div class="p-6 flex flex-col flex-grow">
+            <h3 class="text-2xl font-['Cormorant_Garamond'] text-gray-900 mb-3 group-hover:text-[#c8a95c] transition duration-300">
+              CUSTOMISED
+            </h3>
+            <p class="text-gray-600 text-base mb-6 flex-grow">
+              All events the making customers orders making all arangments and all expance
+              maintaings buget frendly events are choosing
+            </p>
+            <a href="./contact.html" class="self-start mt-auto text-sm px-4 py-1.5 bg-[#c8a95c] text-white rounded-full hover:bg-transparent hover:text-[#c8a95c] border border-[#c8a95c] transition duration-300">
+              Learn More
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="bg-gradient-to-r from-gray-900 to-black text-white py-12">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid md:grid-cols-3 gap-12 border-b border-gray-700 pb-8">
+        
+        <!-- About Section -->
+        <div class="space-y-6">
+          <h3 class="text-2xl font-semibold text-[#c8a95c]">About Us</h3>
+          <p class="text-gray-300 leading-relaxed">We specialize in creating unforgettable wedding experiences, tailored to your needs. Let us help you plan your perfect day.</p>
+        </div>
+
+      
+        <div class="space-y-6">
+          <h3 class="text-2xl font-semibold text-[#c8a95c]">Quick Links</h3>
+          <ul class="space-y-4">
+            <li><a href="./about.html" class="text-gray-300 hover:text-[#c8a95c] transition duration-300">About</a></li>
+            <li><a href="./services.html" class="text-gray-300 hover:text-[#c8a95c] transition duration-300">Services</a></li>
+            <li><a href="./gallery.html" class="text-gray-300 hover:text-[#c8a95c] transition duration-300">Gallery</a></li>
+            <li><a href="./contact.html" class="text-gray-300 hover:text-[#c8a95c] transition duration-300">Contact Us</a></li>
+          </ul>
+        </div>
+
+      
+        <div class="space-y-6">
+          <h3 class="text-2xl font-semibold text-[#c8a95c]">Contact Us</h3>
+          <div class="space-y-4">
+            <p class="text-gray-300 flex items-center gap-3">
+              <i class="fas fa-map-marker-alt text-[#c8a95c]"></i>
+              123 Wedding St, Kochi, India
+            </p>
+            <p class="text-gray-300 flex items-center gap-3">
+              <i class="fas fa-phone text-[#c8a95c]"></i>
+              8590294332
+            </p>
+            <p class="text-gray-300 flex items-center gap-3">
+              <i class="fas fa-envelope text-[#c8a95c]"></i>
+              elite@gmail.com
+            </p>
+
+        
+            <div class="flex gap-6 mt-6">
+              <a href="https://www.facebook.com/" class="text-gray-300 hover:text-[#c8a95c] transition duration-300">
+                <i class="fab fa-facebook-f text-xl"></i>
+              </a>
+              <a href="https://www.instagram.com/" class="text-gray-300 hover:text-[#c8a95c] transition duration-300">
+                <i class="fab fa-instagram text-xl"></i>
+              </a>
+              <a href="https://x.com/?lang=en" class="text-gray-300 hover:text-[#c8a95c] transition duration-300">
+                <i class="fab fa-twitter text-xl"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="mt-8 text-center text-gray-400">
+        <p class="text-sm">&copy; 2024 Elite est(2001). All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

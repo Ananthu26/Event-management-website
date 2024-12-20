@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Elite</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+    #menu, #dropdown-menu {
+        font-family: "Montserrat", sans-serif;
+    }
+    #logoo {
+        font-family: "Playfair", serif;
+    }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+
+
+   
+    <nav class="bg-white">
+
+<nav class="fixed top-0 left-0 right-0 z-50 bg-gradient-to-r from-gray-900 to-black shadow-lg border-b border-yellow-400/20">
+    <div class="container mx-auto px-16">
+      <div class="flex justify-between items-center py-6">
+        
+        <a href="./index.html" id="logoo" class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-yellow-200 hover:from-yellow-200 hover:to-yellow-400 transition duration-300">ELITE</a>
+  
+        
+        <button 
+          id="menu-toggle" 
+          class="hamburger hover:text-blue-600 focus:outline-none md:hidden"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+          </svg>
+        </button>
+  
+       
+        <div id="menu" class="hidden md:flex md:space-x-4 lg:space-x-8 items-center">
+            <a href="./index.html" class="text-gray-300 text-center hover:text-yellow-400 transition-all duration-300 hover:scale-105">HOME</a>
+            <a href="./about.html" class="text-gray-300 text-center hover:text-yellow-400 transition-all duration-300 hover:scale-105">ABOUT</a>
+            <a href="./services.html" class="text-gray-300 text-center hover:text-yellow-400 transition-all duration-300 hover:scale-105">SERVICES</a>
+            <a href="./gallery.html" class="text-gray-300 text-center hover:text-yellow-400 transition-all duration-300 hover:scale-105">GALLERY</a>
+            <a href="./contact.html" class="text-yellow-400 font-medium text-center hover:text-yellow-400 transition-all duration-300 hover:scale-105 border-b-2 border-yellow-400">CONTACT</a>
+            <a href="./pricing.html" class="bg-yellow-400 text-black px-4 py-1 rounded-full hover:bg-yellow-500 transition-all duration-300 hover:scale-105">PRICING</a>
+        </div>
+      </div>
+  
+    
+      <div id="dropdown-menu" class="hidden flex-col md:hidden space-y-2 bg-black rounded-md shadow-md px-4 py-2">
+        <a href="./index.html" class="block text-center text-white hover:text-yellow-400 transition">HOME</a>
+      <a href="./about.html" class="block text-center text-white hover:text-yellow-400 transition">ABOUT</a>
+      <a href="./services.html" class="block text-center text-white hover:text-yellow-400 transition">SERVICES</a>
+      <a href="./gallery.html" class="block text-center text-white hover:text-yellow-400 transition">GALLERY</a>
+      <a href="./contact.html" class="block text-center text-yellow-400 font-medium hover:text-yellow-400 transition border-b-2 border-yellow-400">CONTACT</a>
+      <a href="./pricing.html" class="block text-center bg-yellow-400 text-black hover:bg-yellow-500 transition rounded-full my-2">PRICING</a>
+      </div>
+    </div>
+  </nav>
+  <div class="h-24"></div>
+  <script>
+   
+    const menuToggle = document.getElementById('menu-toggle');
+    const dropdownMenu = document.getElementById('dropdown-menu');
+  
+    menuToggle.addEventListener('click', () => {
+      dropdownMenu.classList.toggle('hidden');
+      dropdownMenu.classList.toggle('flex');
+    });
+  </script>
+  
+    
+    </nav>
+
+   
+    <div class="flex-grow container max-w-7xl mx-auto px-6 py-4">
+      
+        <section class="text-center mb-4">
+            <h1 class="text-4xl sm:text-5xl font-bold mb-2">Get in <span class="text-[#c8a95c]">Touch</span></h1>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">Let us help bring your vision to life. Contact us today to start planning your perfect event.</p>
+        </section>
+
+       
+        <div class="grid md:grid-cols-2 gap-8 mb-4">
+            
+            <div class="bg-white p-6 rounded-2xl shadow-lg">
+                <h2 class="text-xl font-bold mb-4">Send us a Message</h2>
+                <form class="space-y-4">
+                    <div>
+                        <label class="block text-gray-700 mb-2">Name</label>
+                        <input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#c8a95c]">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 mb-2">Email</label>
+                        <input type="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#c8a95c]">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 mb-2">Phone</label>
+                        <input type="tel" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#c8a95c]">
+                    </div>
+                    <div>
+                        <label class="block text-gray-700 mb-2">Message</label>
+                        <textarea rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#c8a95c]"></textarea>
+                    </div>
+                    <button type="submit" class="bg-[#c8a95c] text-white px-8 py-3 rounded-full hover:bg-transparent hover:text-[#c8a95c] border border-[#c8a95c] transition duration-300 w-full">
+                        Send Message
+                    </button>
+                </form>
+            </div>
+
+           
+            <div class="space-y-4">
+                <div class="bg-white p-6 rounded-2xl shadow-lg mb-4">
+                    <h2 class="text-2xl font-bold mb-6">Contact Information</h2>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-4">
+                            <i class="fas fa-map-marker-alt text-[#c8a95c] text-xl"></i>
+                            <p>123 Wedding St, Kochi, India</p>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <i class="fas fa-phone text-[#c8a95c] text-xl"></i>
+                            <p>8590294332</p>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <i class="fas fa-envelope text-[#c8a95c] text-xl"></i>
+                            <p>elite@gmail.com</p>
+                        </div>
+                        <div class="flex space-x-4 mt-6">
+                            <a href="#" class="text-[#c8a95c] hover:text-[#a88a4c]">
+                                <i class="fab fa-facebook-f text-xl"></i>
+                            </a>
+                            <a href="#" class="text-[#c8a95c] hover:text-[#a88a4c]">
+                                <i class="fab fa-instagram text-xl"></i>
+                            </a>
+                            <a href="#" class="text-[#c8a95c] hover:text-[#a88a4c]">
+                                <i class="fab fa-twitter text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+              
+                <div class="rounded-2xl overflow-hidden shadow-lg h-[200px]">
+                    <div style="width: 100%">
+                        <iframe width="100%" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=200&amp;hl=en&amp;q=+(Maritus%20Events%20and%20Wedding%20planners%20%7C%20wedding%20planners%20in%20Kochi,%20Keralasiness%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/">gps trackers</a></iframe></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <footer class="bg-gradient-to-r from-gray-900 to-black border-t border-yellow-400/20 mt-auto">
+        <p class="text-center text-sm text-gray-400 py-6 font-light">
+            Thanks for being here, it meant a lot to us ❤️
+        </p>
+    </footer>
+
+    <script>
+        
+        const menuToggle = document.getElementById('menu-toggle');
+        const dropdownMenu = document.getElementById('dropdown-menu');
+
+        menuToggle.addEventListener('click', () => {
+            dropdownMenu.classList.toggle('hidden');
+            dropdownMenu.classList.toggle('flex');
+        });
+    </script>
+</body>
+</html>
