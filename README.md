@@ -48,4 +48,9 @@ For detailed documentation, please visit:
 
 ## 🚀 Deployment
 
-1. Build the project:
+<img src="./Screenshots/Homepage.png" width="800" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" alt="Slideshow Preview">
+<img src="./Screenshots/about.png" width="800" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" alt="Slideshow Preview">
+<img src="./Screenshots/gallery.png" width="800" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" alt="Slideshow Preview">
+<img src="./Screenshots/Service.png" width="800" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" alt="Slideshow Preview">
+<img src="./Screenshots/contact.png" width="800" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" alt="Slideshow Preview">
+<img src="./Screenshots/pricing.png" width="800" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" alt="Slideshow Preview">
