@@ -17,22 +17,6 @@ A modern and responsive website built with Tailwind CSS.
 JavaScript
  Node.js
 
-## 📦 Installation
-
-1. Clone the repository:
-git clone https://github.com/Ananthu26/Event-management-website.git
-
-2. Install dependencies:
-npm install
-
-3. Start the development server:
-npm run dev
-
-4. Deploy the contents of the `dist` folder to your hosting provider
-
-5. Open `http://localhost:3000` in your browser
-
-
 ## 👥 Contributing
 
 Contributions are always welcome! Here's how you can help:
@@ -43,14 +27,15 @@ For detailed documentation, please visit:
 - [Tailwind CSS Documentation](https://tailwindcss.com/docs)
 - [Project Wiki](https://github.com/yourusername/your-repo-name/wiki)
 
-## 🧪 Running Tests
-
-
-## 🚀 Deployment
-
+## 🚀 Homepage
 <img src="./Screenshots/Homepage.png" width="800" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" alt="Slideshow Preview">
+## 🚀 About
 <img src="./Screenshots/about.png" width="800" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" alt="Slideshow Preview">
+## 🚀 Gallery
 <img src="./Screenshots/gallery.png" width="800" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" alt="Slideshow Preview">
+## 🚀 Service
 <img src="./Screenshots/Service.png" width="800" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" alt="Slideshow Preview">
+## 🚀 Contact
 <img src="./Screenshots/contact.png" width="800" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" alt="Slideshow Preview">
+## 🚀 Pricing
 <img src="./Screenshots/pricing.png" width="800" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);" alt="Slideshow Preview">
